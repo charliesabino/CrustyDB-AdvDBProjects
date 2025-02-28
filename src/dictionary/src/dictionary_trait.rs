@@ -111,7 +111,7 @@ pub fn dictionary_factory(
             Ok(Box::new(dict))
         }
         DictEncoding::RePairFront => {
-            let mut dict = RepairOPDictionary::new();
+            let mut dict = RepairFrontOP::new();
             dict.encode_keys(values_ref)?;
             Ok(Box::new(dict))
         }
